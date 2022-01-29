@@ -1,0 +1,25 @@
+NETWORK:
+  num_cls: 2 #you cannot change this for DAD dataset
+  fps: 20 #you cannot change this for DAD dataset
+  lr: 0.0001
+  batch_size: 10 #if your memory size is low then reduce the batch size
+  epoch: 10
+  input_dim: [224,224] #to save memory you can reduce the input dimension
+  n_mean: [0.5,0.5,0.5]
+  n_std: [0.5,0.5,0.5]
+  h_dim: 256
+  z_dim: 128
+  n_layers: 1
+  dropout: [0.5,0.3]
+  gpu_id: '0'
+  extractor: resnet50 #choice [resnet50, vgg16]
+  loss_type: exponential #choice [exponential, crossentropy]
+  network_type: gru #choice [cnn, gru] Selecting cnn will not use gru after feature extractor
+DIRECTORY:
+  train_dir: ../dummy_data/train/
+  test_dir: ../dummy_data/test/
+  demo_dir: ../demo/000481
+  destination_dir: ../explanation/ #demo will be stored here after inference
+  model_dir: ../snapshot
+  logs_dir: ../logs
+  best_weight: ../snapshot/best_model.pth
