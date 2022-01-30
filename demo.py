@@ -29,6 +29,7 @@ n_mean = cfg['n_mean']
 n_std = cfg['n_std']
 h_dim = cfg['h_dim']
 z_dim = cfg['z_dim']
+input_dim = cfg['input_dim']
 n_layers = cfg['n_layers']
 dropout = cfg['dropout']
 extractor = cfg['extractor']
@@ -203,7 +204,7 @@ if __name__ == '__main__':
 
     # cam = building_cam(model,GradCAM,methods,use_cuda)
 
-    video_name = video_dir.split('/')[-2]
+    video_name = video_dir.split('/')[-1]
     destination_dir = destination_folder+ video_name
     if not os.path.exists(destination_dir):
         os.makedirs(destination_dir)

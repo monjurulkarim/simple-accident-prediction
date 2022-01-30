@@ -16,9 +16,9 @@ NETWORK:
   loss_type: exponential #choice [exponential, crossentropy]
   network_type: gru #choice [cnn, gru] Selecting cnn will not use gru after feature extractor
 DIRECTORY:
-  train_dir: ../dummy_data/train/
-  test_dir: ../dummy_data/test/
-  demo_dir: ../demo/000481
+  train_dir: ../data/train/
+  test_dir: ../data/test/
+  demo_dir: ../demo/000605
   destination_dir: ../explanation/ #demo will be stored here after inference
   model_dir: ../snapshot
   logs_dir: ../logs

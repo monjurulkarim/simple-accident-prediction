@@ -49,6 +49,7 @@ class MyDataset(Dataset):
         images = []
         for i in indices:
             image_path = self.image_paths[i][0]
+            # print(image_path)
             # print('image_path :', image_path)
             image = Image.open(image_path)
             if self.transform:
@@ -61,7 +62,8 @@ class MyDataset(Dataset):
         vid = video_id.split('/')[-2]
 
         x = torch.stack(images).to(self.device)
-        if self.image_paths[start][1] == 1:
+
+        if self.image_paths[start][1] == 0:
             label = 0,1 #for positive class
             try:
                 toa = [90]

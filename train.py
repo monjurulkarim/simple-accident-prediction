@@ -196,7 +196,6 @@ def train():
         for name, param in model.features.named_parameters():
             if "fc.0.weight" in name or "fc.0.bias" in name:
                 param.requires_grad = True
-                print(name)
             else:
                 param.requires_grad = False
 
