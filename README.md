@@ -4,3 +4,6 @@ This is an accident prediction model using GRU. The architecture of the model is
 <div align=center>
   <img src="asset/architecture.PNG" alt="Architecture" width="800"/>
 </div>
+
+## Dataset
+This code supports Street Accident (SA) Dataset. The dataset can be downloaded from [here](https://bit.ly/3snfCAO) and needs to be put inside the folder `data/`
