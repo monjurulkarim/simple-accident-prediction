@@ -29,9 +29,17 @@ git clone https://github.com/monjurulkarim/simple-accident-prediction
 * Download the dataset and put it inside `data`
 
 ### Training
+To train the network on you terminal type:
 ~~~~
 python train.py
 ~~~~
 
 ### Testing
-* This repository also integrated grad-cam tool to generate class acitavation maps
+* This repository also integrated grad-cam tool to generate class acitavation maps. Grad-cam needs to be installed first to use this module.
+~~~~
+pip install grad-cam==1.3.1
+~~~~
+To visualize the result: 
+~~~~
+python demo.py
+~~~~
