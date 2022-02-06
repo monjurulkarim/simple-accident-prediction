@@ -22,7 +22,10 @@ This code supports Street Accident (SA) Dataset (also known as DAD dataset). The
 
 ## Getting started
 * Install the required dependencies
-* Clone this repository by typing `git clone https://github.com/monjurulkarim/simple-accident-prediction`
+* Clone this repository by typing:
+~~~~
+git clone https://github.com/monjurulkarim/simple-accident-prediction
+~~~~
 * Download the dataset and put it inside `data`
 * To train the network:
 
