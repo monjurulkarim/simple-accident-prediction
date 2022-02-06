@@ -9,3 +9,6 @@ This is an accident prediction model using GRU. The architecture of the model is
 This code supports Street Accident (SA) Dataset (also known as DAD dataset). The video dataset needs to be converted into frames to train and test the network. 
 > * Please download the frames from [here](https://bit.ly/3snfCAO). Note that, downloaded datasets needs to be put inside the folder `data/`
 > * (Optional) Original video can be downloaded from the [SA official](https://github.com/smallcorgi/Anticipating-Accidents).
+
+## Requirement
+* Pytorch >=1.2
