@@ -43,3 +43,8 @@ To visualize the result:
 ~~~~
 python demo.py
 ~~~~
+(To see the prediction score, one block of code needs to be uncommented first. Instruction can be found inside the code)
+
+## Acknowledgement
+1. PyTorch library for CAM methods. https://github.com/jacobgil/pytorch-grad-cam
+
