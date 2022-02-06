@@ -12,3 +12,10 @@ This code supports Street Accident (SA) Dataset (also known as DAD dataset). The
 
 ## Requirement
 * Pytorch >=1.2
+* torchvision >= 0.4
+* tqdm
+* tensorboardX
+* numpy
+* natsort
+* opencv-python >= 4.1.1.26
+* Pillow
