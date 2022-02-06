@@ -40,7 +40,7 @@ python train.py
 ~~~~
 pip install grad-cam==1.3.1
 ~~~~
-To visualize the result: 
+To visualize the grad-cam result: 
 ~~~~
 python demo.py
 ~~~~
